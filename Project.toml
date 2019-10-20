@@ -3,8 +3,12 @@ uuid = "6287c838-f359-11e9-13fe-5d2bfc36a13c"
 authors = ["Jan-Philipp Koester"]
 version = "0.1.0"
 
+[deps]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+
 [compat]
 julia = "1"
+ForwardDiff = "0.10"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

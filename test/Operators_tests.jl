@@ -1,7 +1,7 @@
 using PhomericsTest
 using Test
 
-@testset "CalcD.jl" begin
+@testset "Operators.jl" begin
     @test Matrix(DX(1.0, 2, 2)) == [0.0 0.5 0.0 0.0; -0.5 0.0 0.0 0.0; 0.0 0.0 0.0 0.5; 0.0 0.0 -0.5 0.0]
     @test Matrix(DXX(1.0, 2, 2)) == [-2.0 1.0 0.0 0.0; 1.0 -2.0 0.0 0.0; 0.0 0.0 -2.0 1.0; 0.0 0.0 1.0 -2.0]
     @test Matrix(DY(1.0, 2, 2)) == [0.0 0.0 0.5 0.0; 0.0 0.0 0.0 0.5; -0.5 0.0 0.0 0.0; 0.0 -0.5 0.0 0.0]

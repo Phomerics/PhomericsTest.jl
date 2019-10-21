@@ -48,7 +48,7 @@ function DY(delta, Nx, Ny)
     # OUTPUT
     # operator:  (Nx*Ny X Nx*Ny)-Dim. FD-Dy operator - array / a.u.
     N = Nx*Ny
-    next_vec = fill(1.0/delta^2, (N-Ny))
+    next_vec = fill(1.0/(2*delta), (N-Ny))
     next_sparse_mat = sparse((1+Ny):N, 1:(N-Ny), next_vec, N, N)
     operator = next_sparse_mat' - next_sparse_mat
     return operator

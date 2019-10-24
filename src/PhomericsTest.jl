@@ -16,5 +16,9 @@ export DY
 export DYY
 
 include("MaxwellSolver.jl")
+include("ScalarSolver.jl")
+
+include("Tools.jl")
+export first_derivative
 
 end # module
